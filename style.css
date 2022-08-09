@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dragao{
+    width: 300px;
+    position: absolute;
+    animation: dragao 50s infinite linear;
+}
+
+.jogo {
+    width: 100%;
+    height: 100%;
+    border-bottom: 20px solid #333;
+    margin: 0 auto;
+    position: absolute;
+    overflow: hidden;
+    background: linear-gradient(rgb(199, 4, 4), rgb(0, 0, 0));
+}
+
+.rocha {
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    animation: animacao-rocha 2s infinite linear;
+}
+
+.scorpion {
+    position: absolute;
+    bottom: 0;
+}
+
+.pular {
+    animation: pular 980ms;
+    position: absolute;
+    bottom: 0;
+}
+
+@keyframes animacao-rocha {
+    from {
+        right: -100px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes pular {
+    0% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 200px;
+    }
+    60% {
+        bottom: 200px; 
+    }
+
+    70% {
+        bottom: 200px;
+    }
+
+    100% {
+        bottom: 0px
+    }
+}
+
+@keyframes dragao {
+    from {
+        right: 150%;
+    }
+
+    to {
+        right: -10000px;
+    }
+}
