@@ -27,10 +27,13 @@ const loop = setInterval(() => {
         clearInterval(loop);
 
         scorpion.src = './img/tonto.gif'
+        document.addEventListener('keydown', function() {
+            this.location.reload()
+        }) 
     }
 }, 10);
 
-
+ 
 
 document.addEventListener('keydown', pular);
-document.addEventListener('keydown', trocarImg); 
+document.addEventListener('keydown', trocarImg);
