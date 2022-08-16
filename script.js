@@ -26,7 +26,7 @@ const loop = setInterval(() => {
 
         clearInterval(loop);
 
-        scorpion.src = '../img/Tonto.gif'
+        scorpion.src = './img/Tonto.gif'
         document.addEventListener('keydown', function() {
             this.location.reload()
         }) 
