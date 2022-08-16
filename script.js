@@ -10,9 +10,9 @@ const pular = () => {
 }
 
 const trocarImg = () => {
-    scorpion.src = '../img/pulando.gif';
+    scorpion.src = './img/Pulando.gif';
     setTimeout(() => {
-        scorpion.src = '../img/caminhando.gif';
+        scorpion.src = './img/Caminhando.gif';
     }, 980)
 }
 
@@ -26,7 +26,7 @@ const loop = setInterval(() => {
 
         clearInterval(loop);
 
-        scorpion.src = '../img/tonto.gif'
+        scorpion.src = '../img/Tonto.gif'
         document.addEventListener('keydown', function() {
             this.location.reload()
         }) 
